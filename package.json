@@ -9,7 +9,7 @@
     "dev:prisma": "pnpm run prisma:dev && pnpm run prisma:generate",
     "build": "next build",
     "build:analyzer": "ANALYZE=true next build",
-    "build:vercel": "pnpm run prisma:deploy && pnpm run prisma:generate && pnpm run prisma:seed && next build",
+    "build:vercel": "pnpm run prisma:generate && next build",
     "build:netlify": "pnpm run prisma:deploy && pnpm run prisma:generate && pnpm run prisma:seed && next build",
     "build:node": "pnpm run prisma:deploy && pnpm run prisma:generate && next build",
     "start": "next start",
